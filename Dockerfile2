@@ -1,6 +1,6 @@
 FROM httpd
 WORKDIR /usr/local/apache2/htdocs
 RUN rm -rf index.html
-RUN echo "THIS IMAGE IS CREATED FOR CONTAINER2" > index.html
+RUN echo "THIS IMAGE IS CREATED FOR CONTAINER2 This is to indicate that jenkins build automatically when there is a change in files via second commit" > index.html
 EXPOSE 80
 CMD ["httpd-foreground"]
